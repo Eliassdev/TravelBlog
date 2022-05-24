@@ -1,0 +1,292 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0px
+    
+}
+html{
+    font-size: 62.5%;
+}
+/* PAGINA PRINCIPAL */
+body{
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    
+}
+    
+header{
+    height: 190px;
+    background-color: rgb(210, 198, 61);
+}
+.logo{
+    position: relative;
+    height: 160px;
+   
+}
+nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+   
+}
+.NavBar{
+    display: flex;
+    flex-direction: row;
+   justify-content: end;
+   list-style: none;
+   font-size: 2em;
+   order: 3;
+   flex-wrap: wrap;
+}
+.NavList{
+    padding-bottom: 1rem;
+}
+li{
+    padding: 0.5rem;
+    list-style: none;
+    
+}
+.NavMenu{
+    text-decoration: none;
+    border: solid;
+    border-color: rgb(117, 117, 228);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+}
+a:hover{
+    color: rgb(214, 86, 35);
+
+}
+.Social img{
+    width: 40px;
+}
+
+.tittle{ 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1rem;
+    font-size: 10em;
+    color: white;  
+}
+.subtittle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5rem;
+    font-size: 5em;
+    color: white;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/caribean.jpg");
+    background-repeat: no-repeat;
+    height: 550px;
+    background-size: cover;
+    justify-content: center;   
+}
+       
+.Footer{
+    display: flex;
+   flex-direction: row;
+   background-color: aqua;
+   text-decoration: none;
+   list-style: none;
+   height: 80px;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+}
+.FooterNav{
+    display: flex;
+    flex-direction: row; 
+    margin-top: 2rem; 
+    justify-content: space-around;
+    font-size: 1.7em;
+    flex-wrap: wrap;
+}
+.FooterList{
+    margin-left: 2.5rem;    
+}
+.FooterMenu{
+    text-decoration: none;
+    
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aqua;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* FIN PAGINA PRINCIPAL */
+.PagesTittle{
+    text-align: center;
+    font-size: 4.5em;
+    text-decoration: underline;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    color: rgb(101, 135, 189);
+    background-color: rgb(248, 234, 193);;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* NOSOTROS */
+.Us{
+    
+    
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 234, 193);
+    justify-content: center; 
+}
+.UsSeccion{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 5rem 5rem 5rem;
+    margin: 9rem 9rem 9rem 9rem;
+    align-items: center;
+}
+.UsTittle{
+    text-align: center;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 4rem 4rem 4rem 4rem;
+    color: rgb(101, 135, 189);
+    font-size: 5em
+}
+.UsImage{
+    width: 300px;
+}
+.UsIframe{
+    width: auto;
+}
+
+.UsText{
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+    color: darkslateblue;
+}
+/* DESTINOS */
+.Destination{
+    background-color: rgb(248, 234, 193);
+    display: flex;
+    justify-content: center;
+}
+.DestinationArticle{
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: min-content;
+    padding: 1.5rem
+    
+}
+.DestinationTitle{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: darkgoldenrod;
+    height: 40px;
+    
+}
+.DestinationImage{
+    padding: 1.5rem;
+    width: 300px;
+}
+.DestinationImage:hover{
+    transform: scale(2.1);
+}
+.TittlePic{
+    text-align: center;
+}
+/* GALERIA */
+.Galery{
+    background-color: rgb(248, 234, 193);
+    display: flex;
+    justify-content: center;
+}
+.GaleryArticle{
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: min-content;
+    
+
+    
+    padding: 1.5rem;
+
+}
+.GaleryTitle{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: darkgoldenrod;
+    height: 40px;
+    
+}
+.GaleryImage{
+    padding: 1.5rem;
+    width: 300px;
+
+}
+.TittlePic{
+    text-align: center;
+}
+/* CONTACTOS */
+.Contact{
+    background-color: rgb(248, 234, 193);
+    padding: 1.5rem;
+    height: auto;
+
+}
+.Form{
+    width: 450px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+.FormItems{
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 675px) {
+    .UsImage{
+        width: 500px;
+    }
+    .UsIframe{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 675px) and (min-width: 320px) {
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        width: 100%;
+    }
+    header{   
+       height: 370px;
+        
+     }
+     .data{
+         padding-top: 100px;
+     }
+     
+
+
+}
