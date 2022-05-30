@@ -182,14 +182,25 @@ a:hover{
 /* DESTINOS */
 .Destination{
     background-color: rgb(248, 234, 193);
-    display: flex;
-    justify-content: center;
-}
-.DestinationArticle{
     display: grid;
-    grid-template-columns: max-content;
-    grid-template-rows: min-content;
-    padding: 1.5rem
+    grid-template-columns: repeat(3, 1fr);
+ 
+}
+.DestinationBrasil{
+    
+    padding: 1.5rem;
+    
+}
+.DestinationPeru {
+    
+
+    padding: 1.5rem;
+    
+}
+.DestinationArg{
+    
+
+    padding: 1.5rem;
     
 }
 .DestinationTitle{
@@ -202,43 +213,43 @@ a:hover{
 }
 .DestinationImage{
     padding: 1.5rem;
-    width: 300px;
+    width: 100%;
 }
 .DestinationImage:hover{
-    transform: scale(2.1);
+    transform: scale(1.1);
 }
 .TittlePic{
     text-align: center;
 }
 /* GALERIA */
 .Galery{
-    background-color: rgb(248, 234, 193);
-    display: flex;
-    justify-content: center;
-}
-.GaleryArticle{
     display: grid;
-    grid-template-columns: max-content;
-    grid-template-rows: min-content;
-    
-
-    
-    padding: 1.5rem;
-
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.5rem;
+   padding: 1rem;
+    background-color: rgb(248, 234, 193);
 }
-.GaleryTitle{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3em;
-    color: darkgoldenrod;
-    height: 40px;
-    
+.ImgGalery{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+} 
+.GridItem1{
+   grid-column: 1/2;
 }
-.GaleryImage{
-    padding: 1.5rem;
-    width: 300px;
+.GridItem2{
+    grid-column: 2/3;
+}
+.GridItem3{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.GridItem4{
+    grid-row: 4;
+    grid-column: 1/2;
+}
 
-}
 .TittlePic{
     text-align: center;
 }
@@ -262,7 +273,7 @@ a:hover{
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: 675px) {
+@media screen and (min-width: 675px) and (max-width: 900px) {
     .UsImage{
         width: 500px;
     }
@@ -270,9 +281,14 @@ a:hover{
         width: 500px;
         height: 500px;
     }
+    .Galery{
+        display: grid;
+        grid-template-columns: auto;
+        grid-row: auto;
+    }
 }
 
-@media screen and (max-width: 675px) and (min-width: 320px) {
+@media screen and (max-width: 675px) and (min-width: 517px) {
     html{
         font-size: 62.5%;
     }
@@ -286,7 +302,40 @@ a:hover{
      .data{
          padding-top: 100px;
      }
-     
+     .Destination{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         
+     }
+     .Galery{
+         display: grid;
+         grid-template-columns: repeat(2, 0.5fr);
+         grid-template-rows: auto;
+     }
+  
+  
+}
+@media screen and (min-width: 320px ) and (max-width: 517px) {
+    html{
+        font-size: 62.5%;
+    }
+    body{
+        width: 100%;
+    }
+    header{   
+       height: 370px;
+        
+     }
+    
+    .Galery{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+        }
 
+    .ImgGalery{
+        width: 150px;
+        height: 150px;
 
+    }
 }
