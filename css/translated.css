@@ -1,0 +1,62 @@
+/* MISC */
+:root {
+  --title: font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+/*PARTIALS*/
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px; }
+
+/*PAGES*/
+.home__page {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: darkslategrey; 
+  color: whitesmoke;
+  background-image: url("../images/caribean.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; 
+}
+  .home__page__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    color: whitesmoke; 
+  }
+  .home__page__title {
+    font-family: var(--title);
+    text-align: center;
+    font-size: 50px;
+  }
+.contact__page {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: darkslategrey; 
+  color: white;
+}
+  .contact__page__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    background-color: darkslategrey;
+   }
+  .contact__page__title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    font-size: 50px; 
+  }
+  .contact__page__form {
+    width: 60%; 
+  }
