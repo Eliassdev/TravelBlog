@@ -1,49 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinos</title>
+    <title>Travel Blog</title>
     <link    rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../Logos/Frameedit.png">
 </head>
 <body>
-    <!-- header de la pagina-->
-    <header> 
-        <nav>
-            <img class="logo animate__animated animate__flipInY" src="../Logos/Frameedit.png" alt="">
-            <ul class="NavBar"> 
-                <li class="NavList">
-                <a class="NavMenu" href="../index.html">Home</a>
-                </li> 
-                <li class="NavList">
-                <a class="NavMenu" href="us.html">Nosotros</a> 
-                </li>
-                <li class="NavList">
-                <a class="NavMenu" href="destinations.html">Destinos</a> 
-                </li>
-                <li class="NavList">
-                <a class="NavMenu" href="galery.html">Galeria</a> 
-                </li>
-                <li class="NavList">
-                <a class="NavMenu" href="contact.html">Contacto</a> 
-                </li>
-            </ul>
-            <ul class="Social">
-                <li class="SocialList">
-                <a class="SocialLogo" href="https://www.instagram.com"><img src="../Logos/instagram.svg" alt=""></a>
-                </li>
-                <li class="SocialList">
-                <a class="SocialLogo" href="https://www.facebook.com/"><img src="../Logos/facebook.png" alt=""></a>
-                </li>
-                <li class="SocialList">
-                <a  href="https://www.whatsapp.com"><img src="../Logos/whatsapp.svg" alt=""></a>
-                </li>
-            </ul> 
-        </nav>
-    </header>    
+    
+    <div class="displayContext">     
+        <!-- header de la pagina-->
+            <header> 
+                <nav class="navbar navbar-expand-xl" style="background-color: #e3f2fd;">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="animate__animated animate__bounce" src="../Logos/Frameedit.png" alt="logo" width="150px">
+                    </a>       
+                </div>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse mt-5 p-5 navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/us.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/galery.html">Galeria</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../pages/destinations.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Destinos
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/destinations.html"#Peru>Peru</a></li>
+                            <li><a class="dropdown-item" href="../pages/destinations.html">Argentina</a></li>
+                            <li><a class="dropdown-item" href="../pages/destinations.html">Brasil</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../pages/contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>    
+        </header>    
  <!-- FIN DEL HEADER -->
  <main>        
     <h2 class="PagesTittle">Destinos</h2>
@@ -66,7 +78,7 @@
             <img class="DestinationImage" src="../images/brasil/rio3.jpg" alt="">                 
             <h4 class="TittlePic"> Rio de Janeiro, Estado de Rio de Janeiro</h4>  
         </article>
-        <article class="DestinationPeru">
+        <article class="DestinationPeru" id="Peru">
             <h3 class="DestinationTitle">Peru</h3>   
         
             <img class="DestinationImage" src="../images/peru/lagunaparon.jpg" alt="">

@@ -16,13 +16,10 @@ body{
     font-size: 5rem;
 }
 .home__subtitle{
-    @extend .home__title
-    
+    @extend .home__title   
 }
 .home__text{
     color: map-get($colors, fourth);
     font-size: 2rem;
     padding: 2rem;
-  
-    
 }
