@@ -1,9 +1,9 @@
 /* MISC */
-@import "./misc/variables.scss";
-
-/*PARTIALS*/
-@import "./partials/header.scss";
-
-/*PAGES*/
-@import "./pages/home.scss";
-@import "./pages/contac.scss";
+@import "./misc/normalize";
+@import "./misc/variables";
+@import "./misc/mixins";
+/* PARTIALS */
+@import "./partials/header";
+@import "./partials/footer";
+/* PAGES */
+@import "./pages/home"

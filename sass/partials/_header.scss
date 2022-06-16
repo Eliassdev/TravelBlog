@@ -2,4 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px;
+    font-size: 1.7rem;
+}
+.nav-link:hover{
+    background-color:map-get($colors, secondary)
+    
 }

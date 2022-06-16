@@ -1,62 +1,81 @@
 /* MISC */
-:root {
-  --title: font-family: Georgia, 'Times New Roman', Times, serif; 
-}
+* {
+  padding: 0;
+  margin: 0; }
 
-/*PARTIALS*/
+html {
+  font-size: 62.5%; }
+
+/* PARTIALS */
 .navbar {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px; }
+  grid-template-rows: 150px;
+  font-size: 1.7rem; }
 
-/*PAGES*/
+.nav-link:hover {
+  background-color: #CAF0F8; }
+
+.footer {
+  bottom: 0;
+  padding: 2rem;
+  background-color: #0077B6; }
+
+.footer__ul, .redes__ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em; }
+
+.footer__article {
+  padding: 2rem; }
+
+.footer__paragraph1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 1.5em; }
+
+.footer__paragraph2 {
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.redes__icon {
+  width: 40px;
+  height: 30px; }
+
+.redes__icon:hover {
+  transform: scale(2.1); }
+
+/* PAGES */
+body {
+  position: relative; }
+
 .home__page {
-  min-width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: darkslategrey; 
-  color: whitesmoke;
-  background-image: url("../images/caribean.jpg");
+  justify-content: center;
+  background-image: url(../images/caribean.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center; 
-}
-  .home__page__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 500px;
-    color: whitesmoke; 
-  }
-  .home__page__title {
-    font-family: var(--title);
-    text-align: center;
-    font-size: 50px;
-  }
-.contact__page {
-  min-width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: darkslategrey; 
+  min-height: 100vh; }
+
+.home__title, .home__subtitle {
   color: white;
-}
-  .contact__page__main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    max-width: 100%;
-    background-color: darkslategrey;
-   }
-  .contact__page__title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-    font-size: 50px; 
-  }
-  .contact__page__form {
-    width: 60%; 
-  }
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  align-items: flex-start;
+  font-size: 5rem; }
+
+.home__text {
+  color: white;
+  font-size: 2rem;
+  padding: 2rem; }

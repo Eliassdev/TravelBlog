@@ -1,0 +1,47 @@
+.footer{
+    bottom: 0;
+    padding: 2rem;
+    background-color: map-get($colors, third);
+    
+}
+    
+.footer__ul{
+    list-style: none;
+    @include flex(row, space-around);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.footer__link{
+    color: map-get($colors, fourth);
+    text-decoration: none;
+    font-size: 1.5em;
+   
+}
+.footer__article{
+    padding: 2rem;
+}
+.footer__paragraph1{
+
+    @include flex(row,flex-start);
+    font-size: 1.5em;
+
+}
+.footer__paragraph2{
+    font-size: 1.3em;
+    @include flex(row,flex-end);
+
+}
+.redes__ul{
+    @extend .footer__ul
+
+
+}
+.redes__icon{
+
+    
+    width: 40px;
+    height: 30px;
+}
+.redes__icon:hover{
+    transform: scale(2.1);
+}

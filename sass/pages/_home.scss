@@ -1,0 +1,28 @@
+body{
+    position: relative
+}
+.home__page{
+    @include flex(column, center,);
+    background-image: url(../images/caribean.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.home__title{
+    color: map-get($colors, fourth);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: flex-start;
+    font-size: 5rem;
+}
+.home__subtitle{
+    @extend .home__title
+    
+}
+.home__text{
+    color: map-get($colors, fourth);
+    font-size: 2rem;
+    padding: 2rem;
+  
+    
+}
