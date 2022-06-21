@@ -1,9 +1,13 @@
 /* MISC */
 @import "./misc/normalize";
 @import "./misc/variables";
+@import "./misc/mediaquerys";
 @import "./misc/mixins";
+
 /* PARTIALS */
 @import "./partials/header";
 @import "./partials/footer";
 /* PAGES */
-@import "./pages/home"
+@import "./pages/home";
+@import "./pages/us";
+@import "./pages/destinations";

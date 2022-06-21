@@ -13,13 +13,13 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     align-items: flex-start;
-    font-size: 5rem;
+    font-size: 5em;
 }
 .home__subtitle{
     @extend .home__title   
 }
 .home__text{
     color: map-get($colors, fourth);
-    font-size: 2rem;
+    font-size: 2em;
     padding: 2rem;
 }

@@ -2,6 +2,11 @@
     bottom: 0;
     padding: 2rem;
     background-color: map-get($colors, third);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
     
 }
     

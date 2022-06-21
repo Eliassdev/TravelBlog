@@ -1,0 +1,49 @@
+.pages__title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 4em;
+}
+.us__principal{
+    background-color: aqua;
+}
+.us{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aqua;
+    padding: 3rem;
+}
+
+
+.us__title{
+    text-align: center;
+    font-family: serif;
+    text-decoration-style: dashed ;
+    color: green;
+    font-size: 3em;
+    text-decoration: underline;
+}
+.us__text{
+    font-family: sans-serif;
+    font-size: 1.7em;
+    padding-left: 1rem;
+    margin: 0;
+}
+.us__section-confort{
+    background-color: aqua;
+    display: flex;
+    padding-left: 3rem;
+}
+.us__section-atencion{
+        display: flex;
+}
+.us__section-bio{
+    display: flex;
+}
+.bio__info{
+    display: flex;
+    flex-direction: column;
+}
+.confor__info{
+    @extend .bio__info
+}
