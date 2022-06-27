@@ -1,0 +1,60 @@
+.destinations__subtitle{
+font-family: 'Times New Roman', Times, serif;
+font-size: 3em;
+text-align: center;
+color: white;
+background-color: black;
+}
+.destinations__sec-peru{
+    background-color: map-get($colors, secondary);
+    padding: 1rem;
+    display: flex;
+
+}
+.destinations__art-peru{
+    padding-bottom: 1rem;
+    align-content: center;
+    border: 1em solid black;
+    width: 100%;
+}
+.destinations__peru-art2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text__peru{
+    text-align: center;
+    font-family: serif;
+    font-size: 1.5em;
+    padding: 1rem;
+
+}
+.destinations__sec-brasil{
+    @extend .destinations__sec-peru
+    
+}
+.destinations__art-brasil{
+    @extend .destinations__art-peru
+}
+.destinations__brasil-art2{
+
+   @extend .destinations__peru-art2
+
+}
+.text__brasil{
+    @extend .text__peru
+}
+.destinations__sec-argentina{
+    @extend .destinations__sec-peru
+}
+.destinations__art-argentina{
+    
+    @extend .destinations__art-peru
+    
+}
+.destinations__argentina-art2{
+    @extend .destinations__peru-art2
+}
+.text__argentina{
+    @extend .text__peru
+}

@@ -10,7 +10,22 @@ html {
   .contact__section {
     display: flex;
     flex-wrap: wrap;
-    min-width: 100%; } }
+    min-width: 100%; }
+  .destinations__sec-peru, .destinations__sec-brasil, .destinations__sec-argentina {
+    display: flex;
+    flex-wrap: wrap; }
+  .destinations__sec-brasil {
+    display: flex;
+    flex-wrap: wrap; }
+  .destinations__sec-argentina {
+    display: flex;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 700px) {
+  main .galery__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px;
+    grid-gap: 1rem; } }
 
 /* PARTIALS */
 .navbar {
@@ -95,13 +110,13 @@ body {
   font-size: 4em; }
 
 .us__principal {
-  background-color: aqua; }
+  background-color: #CAF0F8; }
 
 .us {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: aqua;
+  background-color: #CAF0F8;
   padding: 3rem; }
 
 .us__title {
@@ -119,9 +134,10 @@ body {
   margin: 0; }
 
 .us__section-confort {
-  background-color: aqua;
+  background-color: #CAF0F8;
   display: flex;
-  padding-left: 3rem; }
+  padding-left: 3rem;
+  padding-bottom: 2rem; }
 
 .us__section-atencion {
   display: flex; }
@@ -132,3 +148,58 @@ body {
 .bio__info, .confor__info {
   display: flex;
   flex-direction: column; }
+
+.destinations__subtitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  background-color: black; }
+
+.destinations__sec-peru, .destinations__sec-brasil, .destinations__sec-argentina {
+  background-color: #CAF0F8;
+  padding: 1rem;
+  display: flex; }
+
+.destinations__art-peru, .destinations__art-brasil, .destinations__art-argentina {
+  padding-bottom: 1rem;
+  align-content: center;
+  border: 1em solid black;
+  width: 100%; }
+
+.destinations__peru-art2, .destinations__brasil-art2, .destinations__argentina-art2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.text__peru, .text__brasil, .text__argentina {
+  text-align: center;
+  font-family: serif;
+  font-size: 1.5em;
+  padding: 1rem; }
+
+.galery__content {
+  width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 2rem;
+  padding: 2rem; }
+
+.galery__content .galery__img picture {
+  width: 100%;
+  height: 100%; }
+
+.galery__content .galery__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.galery__content .galery__img:nth-of-type(3) {
+  grid-row-end: span 2; }
+
+.galery__content .galery__img:nth-of-type(6) {
+  grid-row-start: span 2; }

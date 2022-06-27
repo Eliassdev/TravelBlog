@@ -5,6 +5,26 @@
             flex-wrap: wrap;
             min-width: 100%;
     }
+    .destinations__sec-peru{
+        display: flex;
+        flex-wrap: wrap;
 
-    
+    }
+    .destinations__sec-brasil{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .destinations__sec-argentina{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and(max-width:700px){
+    main .galery__content{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 200px;
+        grid-gap: 1rem;
+
+    }
 }

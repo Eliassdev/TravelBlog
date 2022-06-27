@@ -1,0 +1,30 @@
+.galery__content{
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 2rem;
+    padding: 2rem;
+    
+}
+.galery__content .galery__img picture{
+        width: 100%;
+        height: 100%;
+        
+
+} 
+.galery__content .galery__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.galery__content .galery__img:nth-of-type(3){
+    grid-row-end: span 2;
+}
+.galery__content .galery__img:nth-of-type(6){
+    grid-row-start: span 2;
+}

@@ -4,13 +4,13 @@
     font-size: 4em;
 }
 .us__principal{
-    background-color: aqua;
+    background-color: map-get($colors, secondary);
 }
 .us{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: aqua;
+    background-color: map-get($colors, secondary);
     padding: 3rem;
 }
 
@@ -30,9 +30,10 @@
     margin: 0;
 }
 .us__section-confort{
-    background-color: aqua;
+    background-color: map-get($colors, secondary);
     display: flex;
     padding-left: 3rem;
+    padding-bottom: 2rem;
 }
 .us__section-atencion{
         display: flex;
