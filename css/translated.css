@@ -27,6 +27,17 @@ html {
     grid-template-rows: 200px;
     grid-gap: 1rem; } }
 
+@media screen and (max-width: 933px) {
+  .us .us__section-atencion {
+    display: flex;
+    flex-direction: column; }
+  .us .us__section-bio {
+    display: flex;
+    flex-direction: column; }
+  .us .us__section-confort {
+    display: flex;
+    flex-direction: column; } }
+
 /* PARTIALS */
 .navbar {
   display: grid;
@@ -142,12 +153,14 @@ body {
 .us__section-atencion {
   display: flex; }
 
+.us {
+  flex-direction: column; }
+
 .us__section-bio {
   display: flex; }
 
 .bio__info, .confor__info {
-  display: flex;
-  flex-direction: column; }
+  display: flex; }
 
 .destinations__subtitle {
   font-family: 'Times New Roman', Times, serif;

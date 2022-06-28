@@ -28,3 +28,18 @@
 
     }
 }
+@media screen and(max-width: 933px) {
+    .us .us__section-atencion{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .us .us__section-bio{
+        display: flex;
+        flex-direction: column;
+    }
+    .us .us__section-confort{
+        display: flex;
+        flex-direction: column;
+    }
+}

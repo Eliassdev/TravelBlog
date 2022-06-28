@@ -4,7 +4,9 @@
     font-size: 4em;
 }
 .us__principal{
+
     background-color: map-get($colors, secondary);
+
 }
 .us{
     display: flex;
@@ -12,6 +14,7 @@
     justify-content: center;
     background-color: map-get($colors, secondary);
     padding: 3rem;
+   
 }
 
 
@@ -34,16 +37,24 @@
     display: flex;
     padding-left: 3rem;
     padding-bottom: 2rem;
+    
+
 }
 .us__section-atencion{
         display: flex;
+        
 }
+.us{
+    flex-direction: column;
+}
+    
 .us__section-bio{
     display: flex;
+    
 }
 .bio__info{
     display: flex;
-    flex-direction: column;
+  
 }
 .confor__info{
     @extend .bio__info
