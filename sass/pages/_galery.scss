@@ -1,7 +1,8 @@
 .galery__content{
-    width: 100%;
+    min-height: 100vh;
+    width: 80%;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -20,11 +21,28 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
 .galery__content .galery__img:nth-of-type(3){
     grid-row-end: span 2;
 }
-.galery__content .galery__img:nth-of-type(6){
-    grid-row-start: span 2;
+.galery__content .galery__img:nth-of-type(9){
+    grid-column-end: span 2;
+}
+.galery__content .galery__img:nth-of-type(11){
+    grid-column-end: span 2;
+}
+.galery__content .galery__img:nth-of-type(14){
+    grid-column-end: span 2;
+}
+.galery__content .galery__img:nth-of-type(19){
+    grid-column-end: span 2;
+}
+
+.pages__title{
+
+}
+.galery{
+    
+    margin-top: 8rem;
 }

@@ -14,66 +14,100 @@
     <link rel="shortcut icon" href="../Logos/SvgjsG1562.png">
 </head>
 <body>
-    <!-- header de la pagina-->
-    <header> 
-        <nav class="navbar navbar-expand-xl" style="background-color: #48CAE4;">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">
-                <img class="animate__animated animate__bounce" src="../Logos/SvgjsG1562.png" alt="logo" width="150px">
-              </a>       
-            </div>
-            <div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse mt-5 p-5 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="us.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="destinations.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Destinos
-                      
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item " href="destinations.html#peru">Peru</a></li>
-                        <li><a class="dropdown-item " href="destinations.html#brasil">Brasil</a></li>
-                        <li><a class="dropdown-item " href="destinations.html#argentina">Argentina</a></li>
-                      </ul>
-                      <li class="nav-item">
-                        <a class="nav-link" href="galery.html">Galeria</a>
-                      </li>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contacto</a>
+  <!-- header de la pagina-->
+  <header id="header" class="fixed-top" style="background-color: rgb(0, 0, 0); " >
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0"><a href="index.html">
+            <img src="../Logos/Logoprincipal.png" alt="">
+          </a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+              <li><a class="nav-link scrollto active" href="../pages/us.html">Nosotros</a></li>         
+              <li><a class="nav-link scrollto" href="../pages/galery.html">Galeria</a></li>
+              <li class="dropdown"><a href="#"><span>Destinos</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li class="dropdown"><a href="#"><span>Paises</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="./destinations.html#peru">Peru</a></li>
+                      <li><a href="./destinations.html#brasil">Brasil</a></li>
+                      <li><a href="./destinations.html#argentina">Argentina</a></li>
+                    </ul>
                   </li>
                 </ul>
+              </li>
+              <li><a class="nav-link scrollto active" href="./contact.html">Contacto</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+    </div>
+  </header><!-- End Header -->
+      <h2 class="contact__title">Contacto</h2>           
+      <div class="container">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <a href="https://www.google.com.ar/maps/place/Av.+Corrientes+1875,+Buenos+Aires/@-34.6042032,-58.3932815,17z/data=!3m1!4b1!4m5!3m4!1s0x95bccac1bfdd323f:0x55d6034a02f56d33!8m2!3d-34.6042032!4d-58.3932815">
+                  <img src="../Logos/google_map_location_logo_icon_159350.png" alt="">
+                </a>
+                <i class="ri-map-pin-line"></i>
+                <h4>Location:</h4>
+                <p>Corrientes 1875, Buenos Aires, Argentina</p>
               </div>
+
+              <div class="email">
+                <a href="https://www.gmail.com">
+                  <img src="../Logos/email.png" alt="">
+                </a>
+                <i class="ri-mail-line"></i>
+                <h4>Email:</h4>
+                <p>info@travelblog.com</p>
+              </div>
+
+
             </div>
-          </nav>    
-      </header>    
-      <!-- FIN DEL HEADER -->
-      <h2 class="contact__title text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 4em;">Contacto</h2>           
-      <section class="contact__section" style="background-color: #aae1f4; display: flex; flex-direction: row; width: 100%; justify-content: space-between;">
-        <article class="contact__article-form p-5" style="width: 60% ;">
-          <form action="" style="display: flex; flex-direction: column; border-color: blue; font-family: serif; font-size: 2em; text-align: center;">
-            <label for="" class="">Email</label>
-            <input type="email" id="exampleFormControlInput1" placeholder="name@example.com" required>
-            
-            
-            <label for="" >Consulta</label>
-            <textarea class="" style="height:100px;" id="" placeholder="Deje su consulta aqui"></textarea>
-            
-            <button type="submit" class="mb-2 btn btn-primary">Enviar</button>
-            <button type="reset" class="mb-2 btn btn-danger">Borrar</button>
-          </form>
-        </article>
-        <article class="contact__article-pic pt-3" style="padding-right: 2em">
-          <picture class="contact__pic">
-            <img class="contact__img" src="../Logos/Maskgroup1.svg" alt="">
-          </picture>
-        </article>
-      </section>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Deje su consulta" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-danger">Borrar</button>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
         
       <!-- FOOTER -->
       <footer class="footer">

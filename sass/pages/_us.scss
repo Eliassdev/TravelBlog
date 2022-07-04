@@ -1,61 +1,44 @@
-.pages__title{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    font-size: 4em;
-}
-.us__principal{
-
-    background-color: map-get($colors, secondary);
-
-}
 .us{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: map-get($colors, secondary);
-    padding: 3rem;
-   
-}
-
-
-.us__title{
-    text-align: center;
-    font-family: serif;
-    text-decoration-style: dashed ;
-    color: green;
-    font-size: 3em;
-    text-decoration: underline;
-}
-.us__text{
-    font-family: sans-serif;
-    font-size: 1.7em;
-    padding-left: 1rem;
-    margin: 0;
-}
-.us__section-confort{
-    background-color: map-get($colors, secondary);
-    display: flex;
-    padding-left: 3rem;
-    padding-bottom: 2rem;
-    
-
-}
-.us__section-atencion{
-        display: flex;
-        
-}
-.us{
-    flex-direction: column;
-}
-    
-.us__section-bio{
-    display: flex;
-    
-}
-.bio__info{
-    display: flex;
+    padding: 40px 0;
+    overflow: hidden;
+    margin-top: 5rem;
+  }
+.post-entry-1 {
+    margin-bottom: 30px;
+  }
+  .post-entry-1 img {
+    margin-bottom: 30px;
+  }
+  .post-entry-1 h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  .post-entry-1 h2 a {
+    color: var(--color-black);
+  }
+  .post-entry-1.lg h2 {
+    font-size: 40px;
+    line-height: 1;
+  }
   
+  .post-meta {
+    font-size: 11px;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--font-secondary);
+    color: rgba(var(--color-black-rgb), 0.4);
+    margin-bottom: 10px;
 }
-.confor__info{
-    @extend .bio__info
+.page__title{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5em;
+}
+.us__p{
+    font-family: sans-serif;
+    font-size: 1.5em;
 }

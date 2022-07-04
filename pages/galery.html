@@ -16,101 +16,143 @@
         <link rel="shortcut icon" href="../Logos/SvgjsG1562.png">
     </head>
 <body>
-    <!-- header de la pagina-->
-    <header> 
-      <nav class="navbar navbar-expand-xl" style="background-color: #48CAE4;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-              <img class="animate__animated animate__bounce" src="../Logos/SvgjsG1562.png" alt="logo" width="150px">
-            </a>       
-          </div>
-          <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-5 p-5 navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="us.html">Nosotros</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="destinations.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Destinos
-                    
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item " href="destinations.html#peru">Peru</a></li>
-                      <li><a class="dropdown-item " href="destinations.html#brasil">Brasil</a></li>
-                      <li><a class="dropdown-item " href="destinations.html#argentina">Argentina</a></li>
-                    </ul>
-                    <li class="nav-item">
-                      <a class="nav-link" href="galery.html">Galeria</a>
-                    </li>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>    
-    </header>    
-    <!-- FIN DEL HEADER -->
+  <!-- header de la pagina-->
+  <header id="header" class="fixed-top" style="background-color: black; margin-bottom: 2rem; " >
+    <div class="container-fluid">
 
-    <main>        
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0"><a href="index.html">
+            <img src="../Logos/Logoprincipal.png" alt="">
+          </a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+              <li><a class="nav-link scrollto" href="../pages/us.html">Nosotros</a></li>         
+              <li><a class="nav-link scrollto active" href="/pages/galery.html">Galeria</a></li>
+              <li class="dropdown"><a href="#"><span>Destinos</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li class="dropdown"><a href="#"><span>Paises</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="./destinations.html#peru">Peru</a></li>
+                      <li><a href="./destinations.html#brasil">Brasil</a></li>
+                      <li><a href="./destinations.html#argentina">Argentina</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="./contact.html">Contacto</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+    </div>
+  </header><!-- End Header -->
+  
+  <main class="galery">        
         <h2 class="pages__title">Galeria</h2>
         <div class="galery__content">
           <div class="galery__img">
-              <picture>
-                <img src="../images/gridgalery/grid1.png" alt="img-galery">
-              </picture>
-            </div>
-          <div class="galery__img">
-              <picture>
-                <img src="../images/gridgalery/grid2.png" alt="img-galery">
-              </picture>
-          </div>
-          <div class="galery__img">
-              <picture>
-                <img src="../images/gridgalery/grid3.png" alt="img-galery">
-              </picture>
-          </div>
-          <div class="galery__img">
-              <picture>
-                <img src="../images/gridgalery/grid4.png" alt="img-galery">
-              </picture>
-            </div>
-          <div class="galery__img">
-              <picture>
-                <img src="../images/gridgalery/grid5.png" alt="img-galery">
-              </picture>
-          </div>
-          <div class="galery__img">
-              <picture>
-                <img src="../images/gridgalery/grid6.png" alt="img-galery">
-              </picture>
-          </div>
-          <div class="galery__img">
-              <picture>
-                <img src="../images/gridgalery/grid7.jpg" alt="img-galery">
-              </picture>
-          </div>
-          <div class="galery__img">
-              <picture>
-                <img src="../images/gridgalery/grid8.jpg" alt="img-galery">
-              </picture>
-          </div>
-          <div class="galery__img">
-              <picture>
-                <img src="../images/gridgalery/grid9.jpg" alt="img-galery">
-              </picture>
-          </div>
-          <div class="galery__img">
-              <picture>
+            <picture>
                 <img src="../images/gridgalery/grid10.png" alt="img-galery">
               </picture>
           </div>
+          <div class="galery__img">
+              <picture>
+                <img src="../images/desayunogrid 1.png" alt="img-galery">
+              </picture>
+          </div>
+          <div class="galery__img">
+              <picture>
+                <img src="https://images.unsplash.com/photo-1506812428898-fe5a708f5359?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTJ8MzQ0MDg3OXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+              </picture>
+            </div>
+          <div class="galery__img">
+              <picture>
+                <img src="https://images.unsplash.com/photo-1596701062351-8c2c14d1fdd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWwlMjBsdWpvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+              </picture>
+          </div>
+          <div class="galery__img">
+              <picture>
+                <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmVzdGF1cmFudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+              </picture>
+            </div>
+          <div class="galery__img">
+              <picture>
+                <img src="https://images.unsplash.com/photo-1583426189374-8090f9dd26cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+              </picture>
+          </div>
+          <div class="galery__img">
+              <picture>
+                <img src="https://images.unsplash.com/photo-1563911302283-d2bc129e7570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+              </picture>
+          </div>
+          <div class="galery__img">
+              <picture>
+                <img src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWwlMjBsdWpvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+              </picture>
+          </div>
+          <div class="galery__img">
+              <picture>
+                <img src="https://images.unsplash.com/photo-1584132869994-873f9363a562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjBiZWFjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+              </picture>
+          </div>
+          <div class="galery__img">
+              <picture>
+                <img src="https://images.unsplash.com/photo-1586611292717-f828b167408c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjBiZWFjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+              </picture>
+          </div>
+          <div class="galery__img">
+            <picture>
+              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="img-galery">
+            </picture>
+          </div>
+          <div class="galery__img">
+            <picture>
+              <img src="https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aG90ZWxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+            </picture>
+          </div>
+          <div class="galery__img">
+            <picture>
+              <img src="https://images.unsplash.com/photo-1535827841776-24afc1e255ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+            </picture>
+          </div>
+          <div class="galery__img">
+            <picture>
+              <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="img-galery">
+            </picture>
+          </div>
+          <div class="galery__img">
+            <picture>
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjByb29tc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+            </picture>
+          </div>
+          <div class="galery__img">
+            <picture>
+              <img src="https://images.unsplash.com/photo-1606046604972-77cc76aee944?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+            </picture>
+          </div>
+          <div class="galery__img">
+            <picture>
+              <img src="https://images.unsplash.com/photo-1616064959886-a500e5c38e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="img-galery">
+            </picture>
+          </div>
+          <div class="galery__img">
+            <picture>
+              <img src="https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGhvdGVsJTIwYmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+            </picture>
+          </div>
+          <div class="galery__img">
+            <picture>
+              <img src="https://images.unsplash.com/photo-1587847139658-201a62d23770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGhvdGVsJTIwYmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="img-galery">
+            </picture>
+          </div>
         </div>
-    </main>
+  </main>
       <!-- FOOTER -->
       <footer class="footer">
         <ul class="footer__ul">

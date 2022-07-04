@@ -13,83 +13,105 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="../Logos/SvgjsG1562.png">
+        <link rel="shortcut icon" href="../Logos/Logoprincipal.png">
     </head>
 <body>
-    <!-- header de la pagina-->
-    <header> 
-      <nav class="navbar navbar-expand-xl" style="background-color: #48CAE4;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-              <img class="animate__animated animate__bounce" src="../Logos/SvgjsG1562.png" alt="logo" width="150px">
-            </a>       
-          </div>
-          <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-5 p-5 navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="us.html">Nosotros</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="destinations.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Destinos
-                    
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item " href="destinations.html#peru">Peru</a></li>
-                      <li><a class="dropdown-item " href="destinations.html#brasil">Brasil</a></li>
-                      <li><a class="dropdown-item " href="destinations.html#argentina">Argentina</a></li>
+  <!-- header de la pagina-->
+  <header id="header" class="fixed-top" style="background-color: rgb(0, 0, 0); " >
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0"><a href="../index.html">
+            <img src="../Logos/Logoprincipal.png" alt="">
+          </a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+              <li><a class="nav-link scrollto active" href="../pages/us.html">Nosotros</a></li>         
+              <li><a class="nav-link scrollto" href="../pages/galery.html">Galeria</a></li>
+              <li class="dropdown"><a href="#"><span>Destinos</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li class="dropdown"><a href="#"><span>Paises</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="./destinations.html#peru">Peru</a></li>
+                      <li><a href="./destinations.html#brasil">Brasil</a></li>
+                      <li><a href="./destinations.html#argentina">Argentina</a></li>
                     </ul>
-                    <li class="nav-item">
-                      <a class="nav-link" href="galery.html">Galeria</a>
-                    </li>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contacto</a>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="./contact.html">Contacto</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <main id="main">
+    <section class="us">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5">
+            <h1 class="page__title">Nosotros</h1>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+
+          <div class="d-md-flex post-entry-2 half mb-5">
+            <a href="#" class="me-4 thumbnail col-6">
+              <img src="../images/bienvenidagrid11.png" alt="" class="img-fluid">
+            </a>
+            <div class="ps-md-5 mt-4 mt-md-0">
+              <h2 class="mb-4 display-4"><b> Nuestra Historia</b></h2>
+              
+              <p class="us__p" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis repellat maxime, adipisci non ipsam at itaque rerum vitae, necessitatibus nulla animi expedita cumque provident inventore? Voluptatum in tempora earum deleniti, culpa odit veniam, ea reiciendis sunt ullam temporibus aut!</p>
+              <p class="us__p" >Fugit eaque illum blanditiis, quo exercitationem maiores autem laudantium unde excepturi dolores quasi eos vero harum ipsa quam laborum illo aut facere voluptates aliquam adipisci sapiente beatae ullam. Tempora culpa iusto illum accusantium cum hic quisquam dolor placeat officiis eligendi.</p>
             </div>
           </div>
-        </nav>    
-    </header>    
-    <!-- FIN DEL HEADER -->
-    <h2 class="pages__title">Nosotros</h2>    
-    <main class="us__principal">
-      <div class="us">
-        <div class="us__section-atencion">
-          <div>
-            <img class="us__image" src="../images/bienvenidagrid11.png" alt="">
-          </div>
-          <div class="us__info">
-            <h3 class="us__title">Calidad de Atencion</h3>
-            <p class="us__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit cumque, voluptas, odit architecto, dolorem quibusdam porro illum molestiae in dolores repellat possimus sed suscipit nihil deleniti nemo ipsa? Obcaecati.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae ipsum accusamus quibusdam in architecto sapiente ex! Explicabo doloremque error earum cupiditate, nisi non consequuntur eligendi voluptates. Quod, libero obcaecati.
-            </p>
+          <div class="d-md-flex post-entry-2 half mt-5">
+            <a href="#" class="me-4 thumbnail order-2 col-6">
+              <img src="../images/recepciongrid11.png" alt="" class="img-fluid">
+            </a>
+            <div class="pe-md-5 mt-4 mt-md-0">
+              <h2 class="mb-4 display-4"> <b> Mision &amp; Vision</b></h2>
+
+              <p class="us__p" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis repellat maxime, adipisci non ipsam at itaque rerum vitae, necessitatibus nulla animi expedita cumque provident inventore? Voluptatum in tempora earum deleniti, culpa odit veniam, ea reiciendis sunt ullam temporibus aut!</p>
+              <p class="us__p" >Fugit eaque illum blanditiis, quo exercitationem maiores autem laudantium unde excepturi dolores quasi eos vero harum ipsa quam laborum illo aut facere voluptates aliquam adipisci sapiente beatae ullam. Tempora culpa iusto illum accusantium cum hic quisquam dolor placeat officiis eligendi.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="us__bio p-2">
-        <article class="us__section-bio">
-          <div class="bio__info">
-            <h3 class="us__title">Bioseguridad</h3>
-            <p class="us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta deleniti iste unde cumque quam praesentium adipisci iusto dolorum accusamus ea. Id sequi voluptatibus deserunt, ex porro aspernatur. Amet, veniam corporis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quasi quis aliquam ipsam laudantium eum blanditiis quam optio soluta est. In necessitatibus neque cumque ipsum animi iusto explicabo voluptates officia.</p>
+    </section>
+
+    <section class="mb-5 bg-light py-5">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-between align-items-lg-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h2 class="display-4 mb-4">Latest News</h2>
+            <p class="us__p" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, rem eaque vel est asperiores iste pariatur placeat molestias, rerum provident ea maiores debitis eum earum esse quas architecto! Minima, voluptatum! Minus tempora distinctio quo sint est blanditiis voluptate eos. Commodi dolore nesciunt culpa adipisci nemo expedita suscipit autem dolorum rerum?</p>
+            <p class="us__p" >At magni dolore ullam odio sapiente ipsam, numquam eius minus animi inventore alias quam fugit corrupti error iste laboriosam dolorum culpa doloremque eligendi repellat iusto vel impedit odit cum. Sequi atque molestias nesciunt rem eum pariatur quibusdam deleniti saepe eius maiores porro quam, praesentium ipsa deserunt laboriosam adipisci. Optio, animi!</p>
+            <p><a href="#" class="more">View All Blog Posts</a></p>
           </div>
-          <img src="../images/recepciongrid11.png" alt="">
-        </article>
-      </div> <br>
-     <div class="us__confort">
-       <article class="us__section-confort">      
-         <img src="../images/salasgrid 1.png" alt="">
-         <div class="confort__info">
-           <h3 class="us__title pt-2">Confort</h3>
-           <p class="us__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta deleniti iste unde cumque quam praesentium adipisci iusto dolorum accusamus ea. Id sequi voluptatibus deserunt, ex porro aspernatur. Amet, veniam corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nisi necessitatibus. Consectetur eaque veniam voluptatum, ratione magni hic sed aperiam a nesciunt officiis, voluptatem impedit ducimus ea. Consequatur, voluptatem minima.</p>    
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-6">
+                <img src="../images/inside.jpg" alt="" class="img-fluid mb-4">
+              </div>
+              <div class="col-6 mt-4">
+                <img src="../images/salasgrid 1.png" alt="" class="img-fluid mb-4">
+              </div>
+            </div>
           </div>
-        </article>
-      </div>   
-    </main>         
+        </div>
+      </div>
+    </section>
       <!-- FOOTER -->
       <footer class="footer">
         <ul class="footer__ul">
