@@ -1,10 +1,5 @@
 @media screen and (max-width: 620px) {
 
-    .contact__section{
-            display: flex;
-            flex-wrap: wrap;
-            min-width: 100%;
-    }
     .destinations__sec-peru{
         display: flex;
         flex-wrap: wrap;
@@ -22,12 +17,13 @@
 }
 @media screen and(max-width:700px){
     main .galery__content{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         grid-template-rows: 200px;
         grid-gap: 1rem;
 
     }
 }
+
 @media screen and(max-width: 933px) {
     .us .us__section-atencion{
         display: flex;

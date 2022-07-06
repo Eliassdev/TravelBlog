@@ -7,10 +7,6 @@ html {
   font-size: 62.5%; }
 
 @media screen and (max-width: 620px) {
-  .contact__section {
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 100%; }
   .destinations__sec-peru, .destinations__sec-brasil, .destinations__sec-argentina {
     display: flex;
     flex-wrap: wrap; }
@@ -23,7 +19,7 @@ html {
 
 @media screen and (max-width: 700px) {
   main .galery__content {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 200px;
     grid-gap: 1rem; } }
 
@@ -171,10 +167,12 @@ html {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
-  color: #282828; }
+  color: #282828;
+  list-style: none; }
 
 .navbar .dropdown ul a i {
-  font-size: 12px; }
+  font-size: 12px;
+  list-style: none; }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
   color: #009961; }
@@ -225,7 +223,7 @@ html {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(15, 15, 15, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   transition: 0.3s;
   z-index: 999; }
 
