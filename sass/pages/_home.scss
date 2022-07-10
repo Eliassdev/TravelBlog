@@ -6,15 +6,17 @@
   background: url("/images/principal.jpg") top center;
   background-size: cover;
   position: relative;
+  
 }
 #hero:before {
   content: "";
-  background: url("/images/principal.jpg") top center;
+
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
+  
 }
 #hero .container {
   padding-top: 72px;
@@ -23,15 +25,16 @@
 }
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 5em;
   font-weight: 700;
   line-height: 56px;
-  color: rgb(210, 58, 58);
+  color: whitesmoke;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #hero h2 {
   color: #eee;
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 2.3em;
 }
 #hero .play-btn {
   width: 94px;
@@ -71,6 +74,7 @@
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+    color: rgb(93, 93, 234);
   }
 }
 
@@ -111,6 +115,7 @@
 }
 .cta p {
   color: #fff;
+  font-size: 1.2em;
 }
 .cta .cta-btn {
   font-family: "Raleway", sans-serif;

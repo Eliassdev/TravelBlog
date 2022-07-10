@@ -1,6 +1,7 @@
-.pages__title{
+
+.destinations__title{
     margin-top: 8rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 5em;
     text-align: center;
     margin-bottom: 3rem;
@@ -13,7 +14,7 @@ color: white;
 background-color: black;
 }
 .destinations__sec-peru{
-    background-color: map-get($colors, primary);
+    background-color: map-get($colors, fourth);
     padding: 1rem;
     display: flex;
 

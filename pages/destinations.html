@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Es un sitio donde podes encontrar asesoramiento para viajes, vacaciones, especificamente en Argentina, Peru y Brasil" >
-        <meta name="keywords" content="VACACIONES, VIAJAR, DESCANSAR, RELAX, TURISMO, HOTELES, PAISAJES. ARGENTINA, PERU, BRASIL, ASESORAMIENTO, PLAYA"> 
+        <meta name="description" content="Es un sitio donde podes encontrar informacion e imagenes de Peru, Brasil y Argentina" >
+        <meta name="keywords" content="PAISAJES, PERU, BRASIL, ARGENTINA, INFORMACION, VACACIONES, VIAJAR, PLAYA, MONTAÑA, LAGOS, PATAGONIA, ASESORAMIENTO"> 
         <title>Destinos</title>
         <link    rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -13,80 +13,79 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="../Logos/SvgjsG1562.png">
+        <link rel="shortcut icon" href="../Logos/loguito.png">
     </head>
 <body>
   <!-- header de la pagina-->
-  <header id="header" class="fixed-top" style="background-color: rgb(0, 0, 0); " >
-    <div class="container-fluid">
-
-      <div class="row justify-content-center">
-        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
-          <h1 class="logo me-auto me-lg-0"><a href="index.html">
-            <img src="../Logos/Logoprincipal.png" alt="">
-          </a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-          <nav id="navbar" class="navbar order-last order-lg-0">
-            <ul>
-              <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
-              <li><a class="nav-link scrollto" href="./us.html">Nosotros</a></li>         
-              <li><a class="nav-link scrollto" href="./galery.html">Galeria</a></li>
-              <li class="dropdown"><a href="#"><span>Destinos</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li class="dropdown"><a href=""><span>Paises</span> <i class="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="../pages/destinations.html#peru">Peru</a></li>
-                      <li><a href="../pages/destinations.html#brasil">Brasil</a></li>
-                      <li><a href="../pages/destinations.html#argentina">Argentina</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a class="nav-link scrollto" href="./contact.html">Contacto</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #00272B;" >
+      <div class="container-fluid" style="background-color: #00272B;">
+        <a class="navbar-brand animate__animated animate__rubberBand" href="../index.html">
+          <img src="../Logos/Logoprincipal.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" aria-current="page" href="./us.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: white;" href="./destinations.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Destinos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./destinations.html#peru">Peru</a></li>
+                <li><a class="dropdown-item" href="./destinations.html#brasil">Brasil</a></li>
+                <li><a class="dropdown-item" href="./destinations.html#argentina">Argentina</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="./galery.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="./contact.html">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
   </header><!-- End Header -->
-    <main>
-      <h2 class="pages__title">Destinos</h2>
+    <main class="destinations">
+      <h1 class="destinations__title">Destinos</h1>
       <section class="destinations__sec-peru">
         <article class="destinations__art-peru"id="peru">
           <h3 class="destinations__subtitle">Peru</h3>
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="...">
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="img-destination">
               </div>
               <div class="carousel-item">
-                <img src="../images/peru/playa.jpg" class="d-block w-100" alt="...">
+                <img src="../images/peru/playa.jpg" class="d-block w-100" alt="img-destination">
               </div>
               <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1632913582790-d0ec5882095a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVydXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+                <img src="https://images.unsplash.com/photo-1632913582790-d0ec5882095a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVydXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="img-destination">
               </div>
               <div class="carousel-item">
-                <img src="../images/peru/mancora.jpg" class="d-block w-100" alt="...">
+                <img src="../images/peru/mancora.jpg" class="d-block w-100" alt="img-destination">
               </div>
               <div class="carousel-item">
-                <img src="../images/peru/rain4.jpg" class="d-block w-100" alt="...">
+                <img src="../images/peru/rain4.jpg" class="d-block w-100" alt="img-destination">
               </div>
               <div class="carousel-item">
-                <img src="../images/peru/machupichu2.jpg" class="d-block w-100" alt="...">
+                <img src="../images/peru/machupichu2.jpg" class="d-block w-100" alt="img-destination">
               </div>
             </div>
           </div>
         </article>
         <article class="destinations__peru-art2">
-          <p class="text__peru">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia voluptatibus consectetur eaque ipsum, commodi deleniti placeat, omnis similique molestias expedita voluptatem in perspiciatis quod, culpa obcaecati laborum alias libero?</p>
-          <picture>
-            <a href="https://www.google.com/maps/place/Per%C3%BA/@-9.1083089,-84.0802323,5z/data=!3m1!4b1!4m5!3m4!1s0x9105c850c05914f5:0xf29e011279210648!8m2!3d-9.189967!4d-75.015152">
-              <img src="../images/peru_flags.png" alt="">
-            </a>
-          </picture>
+          <p class="text__peru">Perú es un país de Sudamérica que abarca una sección del bosque del Amazonas y Machu Picchu, una antigua ciudad inca en las alturas de los Andes. La región en torno a Machu Picchu, incluido el Valle Sagrado, el Camino del Inca y la ciudad colonial de Cuzco, es rica en sitios arqueológicos.</p>
+          <p class="text__peru">En la costa árida del Pacífico de Perú se encuentra Lima, la capital, con un centro colonial preservado e importantes colecciones de arte precolombino.</p>
+          <a href="contact.html">
+            <button type="button" class="btn btn-success">Consulta tu Destino</button>
+          </a>
+
         </article>
         </section>
       <section id="brasil" class="destinations__sec-brasil">
@@ -95,33 +94,32 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJhc2lsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+                  <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJhc2lsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="img-destination">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/brasil/morro.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/brasil/morro.jpg" class="d-block w-100" alt="img-destinatimg-destination">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/brasil/rio3.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/brasil/rio3.jpg" class="d-block w-100" alt="img-destinatimg-destination">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/brasil/bahia.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/brasil/bahia.jpg" class="d-block w-100" alt="img-destinatimg-destination">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/brasil/catarat.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/brasil/catarat.jpg" class="d-block w-100" alt="img-destinatimg-destination">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/brasil/ceara.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/brasil/ceara.jpg" class="d-block w-100" alt="img-destinatimg-destination">
                 </div>
               </div>
             </div>
           </article>
           <article class="destinations__brasil-art2">
-            <p class="text__brasil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia voluptatibus consectetur eaque ipsum, commodi deleniti placeat, omnis similique molestias expedita voluptatem in perspiciatis quod, culpa obcaecati laborum alias libero?</p>
-            <picture>
-              <a href="https://www.google.com/maps/place/Brasil/@-2.6418614,-130.9703277,3z/data=!3m1!4b1!4m5!3m4!1s0x9c59c7ebcc28cf:0x295a1506f2293e63!8m2!3d-14.235004!4d-51.92528">
-                <img src="../images/brazil_flags.png" alt="">
-              </a>
-            </picture>
+            <p class="text__brasil">Brasil es un vasto país de Sudamérica que se extiende desde la Cuenca del Amazonas en el norte hasta los viñedos y las enormes cataratas del Iguazú en el sur.</p>
+            <p class="text__brasil"> Río de Janeiro, simbolizado por su estatua de 38 m del Cristo Redentor sobre el cerro del Corcovado, es famoso por sus ajetreadas playas Copacabana e Ipanema, junto con su enorme y estridente festival del Carnaval, que cuenta con carros alegóricos, exuberantes disfraces y danza y música samba.</p>
+            <a href="contact.html">
+              <button type="button" class="btn btn-success">Consulta tu Destino</button>
+            </a>
           </article>
       </section>
       <section class="destinations__sec-argentina" id="argentina">
@@ -130,33 +128,34 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="../images/Argentina/aconcagua.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/Argentina/aconcagua.jpg" class="d-block w-100" alt="img-destination">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/Argentina/glaciar.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/Argentina/glaciar.jpg" class="d-block w-100" alt="img-destination">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/Argentina/sandes.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/Argentina/sandes.jpg" class="d-block w-100" alt="img-destination">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/Argentina/salinas.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/Argentina/salinas.jpg" class="d-block w-100" alt="img-destination">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/Argentina/cordoba1.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/Argentina/cordoba1.jpg" class="d-block w-100" alt="img-destination">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/Argentina/jujuy1.jpg" class="d-block w-100" alt="...">
+                  <img src="../images/Argentina/jujuy1.jpg" class="d-block w-100" alt="img-destination">
                 </div>
               </div>
             </div>
         </article>
         <article class="destinations__argentina-art2">
-          <p class="text__argentina">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia voluptatibus consectetur eaque ipsum, commodi deleniti placeat, omnis similique molestias expedita voluptatem in perspiciatis quod, culpa obcaecati laborum alias libero?</p>
-          <picture>
-            <a href="https://www.google.com/maps/place/Argentina/@-32.502333,-100.2459201,3z/data=!4m13!1m7!3m6!1s0x95bccaf5f5fdc667:0x3d2f77992af00fa8!2sArgentina!3b1!8m2!3d-38.416097!4d-63.616672!3m4!1s0x95bccaf5f5fdc667:0x3d2f77992af00fa8!8m2!3d-38.416097!4d-63.616672">
-              <img src="../images/argentina_flags.png" alt="">
-            </a>
-          </picture>
+          <p class="text__argentina">Argentina es un país sudamericano de gran envergadura con un terreno que incluye las montañas de los Andes, lagos glaciales y praderas en las Pampas, la tierra tradicional de pastoreo de su famoso ganado.
+            El país es conocido por el baile y la música del tango. 
+          </p>
+          <p class="text__argentina">Su gran capital cosmopolita, Buenos Aires, se centra en la Plaza de Mayo, rodeada por imponentes edificios del siglo XIX, como la Casa Rosada, el icónico palacio presidencial.</p>
+          <a href="contact.html">
+            <button type="button" class="btn btn-success">Consulta tu Destino</button>
+          </a>
         </article>
       </section>
     </main>
@@ -184,17 +183,17 @@
             <ul class="redes__ul">
               <li class="redes__li">
                 <a class="redes__link" href="https://www.facebook.com/">
-                  <img class="redes__icon" src="../Logos/Facebook.svg" alt="">
+                  <img class="redes__icon" src="../Logos/Facebook.svg" alt="icon-redes">
                 </a>
               </li>
               <li>
                 <a class="redes__link" href="https://www.instagram.com/">
-                  <img class="redes__icon" src="../Logos/instagram.svg" alt="">
+                  <img class="redes__icon" src="../Logos/instagram.svg" alt="icon-redes">
                 </a>
               </li>
               <li>
                 <a class="redes__link" href="https://www.whatsapp.com/">
-                  <img class="redes__icon" src="../Logos/whatsapp.svg" alt="">
+                  <img class="redes__icon" src="../Logos/whatsapp.svg" alt="icon-redes">
                 </a>
               </li>
             </ul>

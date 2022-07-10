@@ -98,7 +98,6 @@ html {
 
 #hero:before {
   content: "";
-  background: url("/images/principal.jpg") top center;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -112,15 +111,16 @@ html {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 5em;
   font-weight: 700;
   line-height: 56px;
-  color: #d23a3a; }
+  color: whitesmoke;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
 
 #hero h2 {
   color: #eee;
   margin-bottom: 40px;
-  font-size: 24px; }
+  font-size: 2.3em; }
 
 #hero .play-btn {
   width: 94px;
@@ -157,7 +157,8 @@ html {
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px;
+    color: #5d5dea; } }
 
 @-webkit-keyframes pulsate-btn {
   0% {
@@ -189,7 +190,8 @@ html {
   font-weight: 700; }
 
 .cta p {
-  color: #fff; }
+  color: #fff;
+  font-size: 1.2em; }
 
 .cta .cta-btn {
   font-family: "Raleway", sans-serif;
@@ -252,7 +254,7 @@ html {
   color: rgba(var(--color-black-rgb), 0.4);
   margin-bottom: 10px; }
 
-.page__title {
+.us__title {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 5em; }
 
@@ -260,9 +262,12 @@ html {
   font-family: sans-serif;
   font-size: 1.5em; }
 
-.pages__title {
+.more {
+  font-size: 1.3em; }
+
+.destinations__title {
   margin-top: 8rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 5em;
   text-align: center;
   margin-bottom: 3rem; }
@@ -275,7 +280,7 @@ html {
   background-color: black; }
 
 .destinations__sec-peru, .destinations__sec-brasil, .destinations__sec-argentina {
-  background-color: #00272B;
+  background-color: white;
   padding: 1rem;
   display: flex; }
 
@@ -295,6 +300,11 @@ html {
   font-family: serif;
   font-size: 1.5em;
   padding: 1rem; }
+
+.galery__title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 5em; }
 
 .galery__content {
   min-height: 100vh;
@@ -338,4 +348,5 @@ html {
 .contact__title {
   margin-top: 8rem;
   text-align: center;
-  font-size: 5em; }
+  font-size: 5em;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
