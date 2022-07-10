@@ -36,9 +36,7 @@ html {
 
 /* PARTIALS */
 .collapse {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end; }
+  flex-grow: 0; }
 
 .navbar-nav {
   font-family: sans-serif;
@@ -181,7 +179,7 @@ html {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: url("/images/wave.jpg") fixed center center;
+  background: url("https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") fixed center center;
   background-size: cover;
   padding: 120px 0; }
 
