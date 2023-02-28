@@ -1,12 +1,14 @@
+/*DECLARO VARIABLES*/
+
 let formulario = document.getElementById("form");
 let mensaje = document.getElementById("subject");
 
-/*DECLARACION DE FUNCION*/
+/*DECLARACION DE EVENTO*/
 
 formulario = document.addEventListener("submit", (e) =>{
     e.preventDefault();
 
-
+/*AGREGO UN CONDICIONAL AL INPUT CON UN SWEET ALERT */
     if(mensaje.value != ""){
 
         Swal.fire({
