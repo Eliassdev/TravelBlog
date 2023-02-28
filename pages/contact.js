@@ -10,7 +10,7 @@ formulario = document.addEventListener("submit", (e) =>{
     if(mensaje.value != ""){
 
         Swal.fire({
-            icon: 'succes',
+            icon: 'success',
             text: 'Formulario Enviado',
             
           })
